@@ -1,0 +1,3 @@
+[submodule "specs/DSEP-Specification"]
+	path = specs/DSEP-Specification
+	url = https://github.com/beckn/DSEP-Specification
