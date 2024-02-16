@@ -55,8 +55,8 @@ Read more [here](https://onest.network/images/PDF/ONEST-Concept-Paper.pdf).
 
 | Name             | Role                           | Github Username |
 |------------------|--------------------------------|-----------------|
-| Rayulu Villa   | Reviewer       | @vrayulu       |
 | Ravi Prakash    | Reviewer       | @ravi-prakash-v       |
+| Rayulu Villa   | Reviewer       | @vrayulu       |
 | Suren      | Reviewer     | @surendrasinghs |
 | Nirmal     | Maintainer | @nirmalnr |
 | Shiva Rakshith     | Maintainer    | @shiva-rakshith   |
@@ -88,6 +88,3 @@ Please also go through other documents [here](./docs/)
 ## Test it yourself
 Import the postman collection containing all these requests [via](./docs/postman_collection/sandbox-sample-collection.json)
 
-OR
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](./docs/postman_collection/sandbox-sample-collection.json)
