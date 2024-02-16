@@ -86,8 +86,8 @@ Please also go through other documents [here](./docs/)
 
 
 ## Test it yourself
-Import the postman collection containing all these requests [via](link-to-be-updated)
+Import the postman collection containing all these requests [via](./docs/postman_collection/sandbox-sample-collection.json)
 
 OR
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](link to be updated)
+[![Run in Postman](https://run.pstmn.io/button.svg)](./docs/postman_collection/sandbox-sample-collection.json)
