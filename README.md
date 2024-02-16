@@ -2,7 +2,7 @@
 
 This project provides open interoperable network level specifications for creating decentralized skills and education networks. It is an adaptation of DSEP protocol based on beckn protocol core specification with added taxonomies and network policies for skilling and education sector. Tag definitions and implementation guides with examples are also provided.
 
-You can find more details on onboarding to the network and other details of the network [here](https://starterpack.onest.network/)
+You can find more details on onboarding to the network and other details of the network in this [starter pack](https://starterpack.onest.network/)
 
 ## Current Working Draft Branch: 
 
