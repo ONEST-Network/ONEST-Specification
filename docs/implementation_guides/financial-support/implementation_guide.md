@@ -276,21 +276,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                     "fulfillments": [
                         {
                             "id": "DSEP_FUL_63587501",
-                            "tracking": false,
-                            "stops": [
-                                {
-                                    "type": "APPLICATION-START",
-                                    "time": {
-                                        "timestamp": "2022-09-01T00:00:00.000Z"
-                                    }
-                                },
-                                {
-                                    "type": "APPLICATION-END",
-                                    "time": {
-                                        "timestamp": "2022-10-31T00:00:00.000Z"
-                                    }
-                                }
-                            ]
+                            "tracking": false
                         }
                     ],
                     "locations": [
@@ -327,6 +313,12 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                             "price": {
                                 "currency": "INR",
                                 "value": "Upto RS.1000 per year"
+                            },
+                            "time": {
+                                "range": {
+                                    "start": "2023-01-03T13:23:01+00:00",
+                                    "end": "2023-02-03T13:23:01+00:00"
+                                }
                             },
                             "rateable": false,
                             "tags": [
@@ -666,6 +658,12 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
                     },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
+                    },
                     "rateable": false,
                     "tags": [
                         {
@@ -885,21 +883,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
             "fulfillments": [
                 {
                     "id": "VSP_FUL_1113",
-                    "tracking": false,
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    "tracking": false
                 }
             ],
             "quote": {
@@ -1096,6 +1080,12 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "xinput": {
                         "required": true,
@@ -1388,21 +1378,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -1520,6 +1496,12 @@ Here the BPP sends the first form to be filled. Value of `Fulfillment.state.desc
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "xinput": {
                         "required": true,
@@ -1812,21 +1794,7 @@ Here the BPP sends the first form to be filled. Value of `Fulfillment.state.desc
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -1944,6 +1912,12 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "xinput": {
                         "required": true,
@@ -2236,21 +2210,7 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -2366,6 +2326,12 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "xinput": {
                         "required": true,
@@ -2658,21 +2624,7 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -2800,6 +2752,12 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -3062,21 +3020,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -3335,6 +3279,12 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                    "currency": "INR",
                    "value": "Upto RS.1000 per year"
                 },
+                "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
+                    },
                 "rateable": false,
                 "tags": [
                     {
@@ -3596,21 +3546,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                       "phone": "+91-9663088848",
                       "email": "jane.doe@example.com"
                    }
-                },
-                "stops": [
-                   {
-                      "type": "APPLICATION-START",
-                      "time": {
-                         "timestamp": "2023-07-14T18:30:00.000Z"
-                      }
-                   },
-                   {
-                      "type": "APPLICATION-END",
-                      "time": {
-                         "timestamp": "2025-07-13T18:30:00.000Z"
-                      }
-                   }
-                ]
+                }
              }
           ],
           "payments" : [
@@ -3735,6 +3671,12 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -3994,21 +3936,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
@@ -4101,6 +4029,12 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     "price": {
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
                     },
                     "rateable": false,
                     "tags": [
@@ -4360,21 +4294,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                             "phone": "+91-9663088848",
                             "email": "jane.doe@example.com"
                         }
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2023-07-14T18:30:00.000Z"
-                            }
-                        },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2025-07-13T18:30:00.000Z"
-                            }
-                        }
-                    ]
+                    }
                 }
             ],
             "payments": [
