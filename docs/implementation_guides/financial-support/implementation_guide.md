@@ -6,7 +6,7 @@ A provider platform which acts as BPP provides scholarships and a seeker platfor
 
 ### Flow Diagram
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/financial-support-flow.png" alt=""><figcaption></figcaption></figure>
 
 ### API Mapping and Sample JSON's
 
