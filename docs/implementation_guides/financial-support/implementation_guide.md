@@ -510,7 +510,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                                             "descriptor": {
                                                 "code": "faq-url",
                                                 "name": "FAQ URL",
-                                                "short_desc": "Link to FAQ",
+                                                "short_desc": "Link to FAQ"
                                             },
                                             "value": "https://www.vs.co.in/vs/resources/68/faq/1015_27.html",
                                             "display": true
