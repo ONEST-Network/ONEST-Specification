@@ -6,7 +6,7 @@ Job Hub is acting as provider platform(BPP) which hosts the jobs and Worker Hub 
 
 ### Flow Diagram:
 
-<figure><img src="../../../.gitbook/assets/work-opportunities.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/work-opportunities-flow.png" alt=""><figcaption></figcaption></figure>
 
 ### API Mapping and Sample JSON's:
 

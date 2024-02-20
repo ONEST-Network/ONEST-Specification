@@ -6,7 +6,7 @@ A provider platform which acts as BPP hosts the courses and a seeker platform wh
 
 ### Flow Diagram:
 
-<figure><img src="../../../.gitbook/assets/learning experience -2 (1).jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/learning-experience-flow.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### API Mapping and Sample JSON's:
 
