@@ -4,6 +4,14 @@ When the Provider app sends a form to the Seeker app to get further details from
 
 | Name Attribute             | HTML Tag       | Description                                                  | Allowed Values                | Remarks                                                                 |
 | -------------------------- | -------------- | ------------------------------------------------------------ | ----------------------------- | ----------------------------------------------------------------------- |
+| user-full-name             | input text     | Full Name                                                    |                               | To be returned in `customer.person.name` in subsequent calls.           |
+| user-date-of-birth         | input text     | Date of Birth                                                |                               | To be returned in `customer.person.dob` in subsequent calls.            |
+| user-gender                | input text     | Gender                                                       | Male, Female, Transgender, Other | To be returned in `customer.person.gender` in subsequent calls.      |
+| user-email                 | input text     | Email                                                        |                               | To be returned in `customer.contact.email` in subsequent calls.         |
+| user-phone-number          | input text     | Phone number                                                 |                               | To be returned in `customer.contact.phone` in subsequent calls.         |
+| user-bank-ifsc             | input text     | IFSC of the bank                                             |                               | To be returned in `payent.params.bank_code` in subsequent calls.        |
+| user-bank-acc-no           | input text     | Bank account number                                          |                               | To be returned in `payent.params.bank_account_number` in subsequent calls.|
+| user-bank-acc-name         | input text     | Beneficiary name of the bank account                         |                               | To be returned in `payent.params.bank_account_name` in subsequent calls.|
 | user-social-category       | select         | User's social category                                       |                               |                                                                         |
 | user-occupation            | select         | User's occupation                                            | Refer to occupations section. |                                                                         |
 | user-phone-verified        | input checkbox | Whether the phone number provided by the seeker is verified  |                               |                                                                         |
@@ -13,9 +21,9 @@ When the Provider app sends a form to the Seeker app to get further details from
 | user-parent-occupation     | select         | User's parent's occupation                                   |                               |                                                                         |
 | user-parent-phone          | input text     | User's parent's phone number                                 |                               |                                                                         |
 | user-ann-hh-inc            | input text     | User's annual household income                               |                               |                                                                         |
-| user-address               | input text     | Address of the user                                          |                               | This can be returned in `billing.address` in subsequent calls             |
-| \<document name>-verified       | input checkbox | Whether the document is verified by the agent                |                               | Please see the list of documents to see the values \<document name> can take |
-| \<document name>-doc            | input file     | Document as pdf or image                                     |                               | Please see the list of documents to see the values \<document> can take |
+| user-address               | input text     | Address of the user                                          |                               | This can be returned in `billing.address` in subsequent calls           |
+| \<Document Name>-verified  | input checkbox | Whether the document is verified by the agent                |                               | Please see the list of documents to see the values \<Document Name> can take |
+| \<Document Name>-doc       | input file     | Document as pdf or image                                     |                               | Please see the list of documents to see the values \<Document Name> can take |
 
 ### List of documents
 
