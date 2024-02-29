@@ -84,5 +84,7 @@ Please also go through other documents [here](./docs/)
 
 
 ## Test it yourself
-Import the postman collection containing all these requests [via](./docs/postman_collection/sandbox-sample-collection.json)
+Import the postman collection containing all these requests from [here](./docs/postman_collection/sandbox-sample-collection.json)
 
+## Contributions
+Please refer to the [contribution guide](https://starterpack.onest.network/community/onest-protocol-specifications-working-group/contribution-guide) for making contributions.
