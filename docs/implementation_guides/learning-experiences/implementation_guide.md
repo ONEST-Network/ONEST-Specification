@@ -805,7 +805,9 @@ The request will contain only minimal details about the job like course name, de
 </details>
 
 7. Using the payment URL, BAP redirects the user to the payment gateway and the user completes the payment. BAP will send one more on\_init with payment status.
-   1. If payment is successful, payment.status is PAID.
+
+* If payment is successful, payment.status is PAID.
+
 
 <details>
 <summary>On INIT - payment success</summary>
@@ -1042,7 +1044,9 @@ The request will contain only minimal details about the job like course name, de
 ```
 </details>
 
-&#x20;         2\. If payment is failed, payment.status is NOT-PAID and payment URL will be shared.
+  
+*  If payment is failed, payment.
+    status is NOT-PAID and payment URL will be shared.
 
 <details>
 <summary>On INIT - payment failed</summary>
