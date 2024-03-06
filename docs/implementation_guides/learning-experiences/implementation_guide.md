@@ -12,36 +12,40 @@ A provider platform which acts as BPP hosts the courses and a seeker platform wh
 
 1. BAP will make search request with an intent, ex: course name, course provider etc.
 
-#### Search API (Search By Course Name)
+<details>
+<summary>Search API (Search By Course Name)</summary>
 
 ```json
-{
-  "context": {
-    "domain": "onest:learning-experiences",
-    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
-    "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
-    "action": "search",
-    "timestamp": "2022-12-15T05:23:03.443Z",
-    "version": "1.1.0",
-    "bap_uri": "https://sample.bap.io/",
-    "bap_id": "sample.bap.io",
-    "ttl": "PT10M"
-  },
-  "message": {
-    "intent": {
-      "item": {
-        "descriptor": {
-          "name": "english"
+  {
+    "context": {
+      "domain": "onest:learning-experiences",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+      "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+      "action": "search",
+      "timestamp": "2022-12-15T05:23:03.443Z",
+      "version": "1.1.0",
+      "bap_uri": "https://sample.bap.io/",
+      "bap_id": "sample.bap.io",
+      "ttl": "PT10M"
+    },
+    "message": {
+      "intent": {
+        "item": {
+          "descriptor": {
+            "name": "english"
+          }
         }
       }
     }
   }
-}
 ```
+</details>
+
 
 2. BPP will create a catalogue of courses with matching criteria and sends it in on\_search request.
 
-#### On Search API&#x20;
+<details>
+<summary>On Search API&#x20;</summary>
 
 The request will contain only minimal details about the job like course name, description, images, preview, price, ratings etc.
 
@@ -226,10 +230,14 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
+
 
 3. BAP will receive the on\_search request and displays the list of courses to the user. Once the user chooses a course, BAP will make select API with item ID to get the complete details about the course.
 
-#### Select API
+<details>
+
+<summary>Select API</summary>
 
 ```json
 {
@@ -260,10 +268,13 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
 
 4. BPP will receive the select request and check if the course is still valid. If the course is still valid, the BPP will send the on\_select call with complete details of the course.
 
-#### On Select API
+ 
+<details>
+<summary>On Select API&#x20;</summary>
 
 ```json
 {
@@ -448,10 +459,14 @@ The request will contain only minimal details about the job like course name, de
 }
 
 ```
+</details>
 
 5. BAP sends the customer details to the BPP in init API.
 
-#### Init API
+
+<details>
+<summary>Init API</summary>
+
 
 ```json
 {
@@ -521,6 +536,7 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
 
 6. BPP sends the payment URL and if any additional details of the user are required, an xinput form is sent in on\_init request to collect them.\
    \
@@ -532,7 +548,9 @@ The request will contain only minimal details about the job like course name, de
    \
    [Example](https://github.com/beckn/DSEP-Specification/blob/draft/examples/financial-support/forms/scholarship-application-form.html) of xinput form and [recommendation](https://github.com/beckn/protocol-specifications/blob/master/docs/BECKN-007-The-XInput-Schema.md)s to create xinput form.
 
-#### On Init API
+ 
+<details>
+<summary>On Init API</summary>
 
 ```json
 {
@@ -784,9 +802,13 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
 
 7. Using the payment URL, BAP redirects the user to the payment gateway and the user completes the payment. BAP will send one more on\_init with payment status.
    1. If payment is successful, payment.status is PAID.
+
+<details>
+<summary>On INIT - payment success</summary>
 
 ```json
 {
@@ -1018,8 +1040,12 @@ The request will contain only minimal details about the job like course name, de
 }
   
 ```
+</details>
 
 &#x20;         2\. If payment is failed, payment.status is NOT-PAID and payment URL will be shared.
+
+<details>
+<summary>On INIT - payment failed</summary>
 
 ```json
 {
@@ -1261,11 +1287,15 @@ The request will contain only minimal details about the job like course name, de
 }
 ```
 
+</details>
+
 8. BAP sends confirms request to confirm the course subscription.\
    \
    Distributor details(tag) and fields in it are optional. These details are collected by seeker and sent to provider.
 
-#### Confirm API
+ 
+<details>
+<summary>Confirm API</summary>
 
 ```json
 {
@@ -1375,10 +1405,14 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
 
 9. BPP sends confirmation of submission of job application.
 
-#### On Confirm API
+ 
+
+<details>
+<summary>On Confirm API</summary>
 
 ```json
 {
@@ -1693,11 +1727,14 @@ The request will contain only minimal details about the job like course name, de
 }
 
 ```
+</details>
 
 10. BAP receives the on\_confirm, which contains the embeddable URLs to the contents. The contents can be videos, pdf etc.
 11. BAP can use the status API to fetch the course status.
 
-#### Status API
+ 
+<details>
+<summary>Status API</summary>
 
 ```json
 {
@@ -2056,6 +2093,8 @@ The request will contain only minimal details about the job like course name, de
   }
 }
 ```
+</details>
+
 
 ### Enums
 
