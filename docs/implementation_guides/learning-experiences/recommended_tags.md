@@ -80,7 +80,7 @@ This tag group is available in the `Item` object. This tag group is used to defi
 | -------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
 | learner-level | Learner level | "Beginner", "Intermediate", "Advanced" | Learner level for the course |
 | prerequisite | Prerequisite | Text. |Prerequisite required for the course |
-| lang-code | Language code | ISO 639-s codes. Eg: "en" |Standard language codes for the course as per ISO 639-s|
+| lang-code | Language code | ISO 639-1:2002 codes. Eg: "en" |Standard language codes for the course as per ISO 639-1:2002|
 | course-duration | Course duration | ISO duration format. Eg: "P20H" | Duration of the course in ISO duration format|
 
 It can be used in on_search and subsequent responses to describe the metadata of a course offered by a Provider in their catalog.

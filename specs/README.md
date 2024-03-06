@@ -1,0 +1,1 @@
+This will contain the reference to the DSEP specification which is used by ONEST network. You can see the version info in the [root directory](https://github.com/ONEST-Network/ONEST-Specification/tree/main?tab=readme-ov-file#core-specification-version).
