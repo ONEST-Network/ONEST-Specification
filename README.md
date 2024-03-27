@@ -53,11 +53,11 @@ Read more [here](https://onest.network/images/PDF/ONEST-Concept-Paper.pdf).
 
 | Name             | Role                           | Github Username |
 |------------------|--------------------------------|-----------------|
-| Ravi Prakash    | Reviewer       | @ravi-prakash-v       |
-| Rayulu Villa   | Reviewer       | @vrayulu       |
-| Suren      | Reviewer     | @surendrasinghs |
-| Nirmal     | Maintainer | @nirmalnr |
-| Shiva Rakshith     | Maintainer    | @shiva-rakshith   |
+| Ravi Prakash    | Reviewer       | ravi-prakash-v       |
+| Rayulu Villa   | Reviewer       | vrayulu       |
+| Suren      | Reviewer     | surendrasinghs |
+| Nirmal     | Maintainer | nirmalnr |
+| Shiva Rakshith     | Maintainer    | shiva-rakshith   |
 
 In case if we have missed any, Please reach out to us.
 
