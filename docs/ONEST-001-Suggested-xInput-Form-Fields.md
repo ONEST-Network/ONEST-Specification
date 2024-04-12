@@ -58,6 +58,7 @@ Consider the BPP wants to get the following details from the user via form
     - 10th marksheet
     - Proof of identity (driving license or passport)
     - Aadhar card
+
 Apart from the above the BPP also want to get confirmation that the agent at the BAP end has verified these certificates. The form for the same will be as below:
 
 ```
