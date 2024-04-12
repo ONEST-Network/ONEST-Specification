@@ -94,8 +94,8 @@ Apart from the above the BPP also want to get confirmation that the agent at the
             required /><br />
         <span><i>(Issued by respective board, name of student match with name in the registration form and proof of
                 identity)</i></span><br />
-        <input type="checkbox" id="proof-of-identity-verified" name="proof-of-identity-verified" />
-        <span><i>Proof of identity has been verified by the agent</i></span><br /><br />
+        <input type="checkbox" id="class-10-marksheet-verified" name="class-10-marksheet-verified" />
+        <span><i>Marksheet has been verified by the agent</i></span><br /><br />
     </div>
 
     <div>
