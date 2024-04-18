@@ -35,7 +35,7 @@ When the Provider app sends a form to the Seeker app to get further details from
 | \<edu-qual-level/edu-qual-name>-score-obtained | input text | Score obtained by the user for the qualification/course |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
 | \<edu-qual-level/edu-qual-name>-score-total | input text | Maximum score possible for the qualification/course and should be entered including total possible score. Example: 10, 5, A+, 600. |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
 | \<edu-qual-level/edu-qual-name>-percentage | input text | Percentage score obtained by the student for the qualification/course |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
-| \<edu-qual-level/edu-qual-name>-completion-month | input text | Completion Month and Year for the qualification/course |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
+| \<edu-qual-level/edu-qual-name>-completion-month | input text | Completion Month and Year for the qualification/course (yyyy-mm) |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
 | \<edu-qual-level/edu-qual-name>-institution-name | input text | Name of the Institution |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
 | \<edu-qual-level/edu-qual-name>-institution-state | input text | State in which institution is located. |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
 | \<edu-qual-level/edu-qual-name>-subject | input text | Subjects or specializations covered as part of a education qualification |  | Please see the list of education qualification table below to see the values \<edu-qual-level/edu-qual-name> can take |
@@ -47,7 +47,7 @@ When the Provider app sends a form to the Seeker app to get further details from
 | edu-qual-score-obtained-\<n> | input file | Score obtained by the user for the qualification/course. |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-score-total-\<n> | input file | Maximum score possible for the qualification/course and should be entered including total possible score. Example: 8.7/10, 4.5/5, B+/A+, 560/600. |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-percentage-\<n> | input file | Percentage score obtained by the student for a education qualification |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
-| edu-qual-completion-month-\<n> | input text | Course Completion Month and Year |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
+| edu-qual-completion-month-\<n> | input text | Course Completion Month and Year (yyyy-mm) |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-institution-name-\<n> | input text | Name of the Institution |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-institution-state-\<n> | input text | State in which institution is located. | ISO_3166-2:IN state code |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-subject-\<n> | input text | Subjects or specializations covered as part of a education qualification |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
@@ -105,6 +105,12 @@ Consider the BPP wants to get the following details from the user via form
 - Parent's full name
 - Parent's phone number
 - Gender of the user
+- Current course level
+- Current course name
+- Name of the Institute in which currently admission taken
+- Month and year in which user passed Class 10
+- Board from which user passed Class 12
+- Name of graduate degree 
 - Following documents:
     - 10th marksheet
     - Proof of identity (driving license or passport)
@@ -122,7 +128,7 @@ Apart from the above the BPP also want to get confirmation that the agent at the
 
     <div>
         <label for="user-parent-phone">Parent's mobile Number*</label>
-        <input type="text" id="user-parent-phone" name="user-parent-phone" autocomplete="off" pattern="[6-9][0-9]{9}"
+        <input type="text" id="user-parent-phone" name="user-parent-phone" pattern="[6-9][0-9]{9}"
             maxlength="10" required />
     </div>
 
@@ -134,34 +140,50 @@ Apart from the above the BPP also want to get confirmation that the agent at the
         <input type="radio" name="user-gender" id="gender4" value="Other" required /> Other
     </div>
 
+    <div>
+        <label for="edu-qual-level-0">Current course level*</label>
+        <input type="text" id="edu-qual-level-0" name="edu-qual-level-0" required />
+    </div>
+
+    <div>
+        <label for="edu-qual-name-0">Current course name*</label>
+        <input type="text" id="edu-qual-name-0" name="edu-qual-name-0" required />
+    </div>
+
+    <div>
+        <label for="edu-qual-institution-name-0">Name of the Institute in which currently admission taken</label>
+        <input type="text" id="edu-qual-institution-name-0" name="edu-qual-institution-name-0" />
+    </div>
+
+    <div>
+        <label for="class-10-completion-month">Month and year in which user passed Class 10</label>
+        <input type="text" id="class-10-completion-month" name="class-10-completion-month" />
+    </div>
+
+    <div>
+        <label for="class-12-issued-by">Board from which user passed Class 12</label>
+        <input type="text" id="class-12-issued-by" name="class-12-issued-by" />
+    </div>
+
+    <div>
+        <label for="graduate-edu-qual-name">Name of graduate degree</label>
+        <input type="text" id="graduate-edu-qual-name" name="graduate-edu-qual-name" />
+    </div>
+
     <h3>Upload Documents</h3>
 
     <span><i>Note: Total documents upload size is allowed upto {upload limit set by BPP} MB and document extensions are
             allowed are '.jpg,.jpeg,.png,.pdf'</i></span><br /><br />
 
-     <div>
-        <label for="class-10-pass-year">Class 10 Pass Year*</label>
-        <input type="text" id="class-10-pass-year" name="class-10-pass-year" autocomplete="off" required />
-    </div>        
-
     <div>
-        <label for="class-10-issued-by">Class 10 Certificate Issue By*</label>
-        <input type="text" id="class-10-issued-by" name="class-10-issued-by" autocomplete="off" required />
-    </div> 
-
-    <div>
-        <label for="graduate-edu-qual-name">Name of the graduate degree*</label>
-        <input type="text" id="graduate-edu-qual-name" name="graduate-edu-qual-name" autocomplete="off" required />
-    </div>   
-
-    <div>
-        <label for="proof-of-identity-doc">Proof of Identity*</label>
-        <input type="file" id="proof-of-identity-doc" name="proof-of-identity-doc" accept=".jpg,.jpeg,.png,.pdf"
-            required />
-        <span><i>(Accepts driving license or passport)</i></span><br />
-        <input type="checkbox" id="proof-of-identity-verified" name="proof-of-identity-verified" />
-        <span><i>Proof of identity has been verified by the agent</i></span><br /><br />
-    </div>  
+        <label for="class-10-marksheet-doc">10th Marksheet*</label>
+        <input type="file" id="class-10-marksheet-doc" name="class-10-marksheet-doc" accept=".jpg,.jpeg,.png,.pdf"
+            required /><br />
+        <span><i>(Issued by respective board, name of student match with name in the registration form and proof of
+                identity)</i></span><br />
+        <input type="checkbox" id="class-10-marksheet-verified" name="class-10-marksheet-verified" />
+        <span><i>Marksheet has been verified by the agent</i></span><br /><br />
+    </div>
 
     <div>
         <label for="proof-of-identity-doc">Proof of Identity*</label>
@@ -179,6 +201,8 @@ Apart from the above the BPP also want to get confirmation that the agent at the
         <input type="checkbox" id="aadhaar-card-verified" name="aadhaar-card-verified" />
         <span><i>Aadhar card has been verified by the agent</i></span><br /><br />
     </div>
+
+    <input type="submit">
 
 </form>
 ```
