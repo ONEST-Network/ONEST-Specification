@@ -49,7 +49,7 @@ When the Provider app sends a form to the Seeker app to get further details from
 | edu-qual-percentage-\<n> | input file | Percentage score obtained by the student for a education qualification |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-completion-month-\<n> | input text | Course Completion Month and Year (yyyy-mm) |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-institution-name-\<n> | input text | Name of the Institution |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
-| edu-qual-institution-state-\<n> | input text | State in which institution is located. | ISO_3166-2:IN state code |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
+| edu-qual-institution-state-\<n> | input text | State in which institution is located. | ISO_3166-2:IN state code | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-subject-\<n> | input text | Subjects or specializations covered as part of a education qualification |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-id-card-\<n> | file | Photo of ID Card | | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 
