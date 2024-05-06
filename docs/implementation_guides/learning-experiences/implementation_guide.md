@@ -112,6 +112,20 @@ The request will contain only minimal details about the job like course name, de
               }
             }
           ],
+          "fulfillments": [
+						{
+							"id": "1",
+							"type": "ONLINE"
+						},
+						{
+							"id": "2",
+							"type": "IN-PERSON"
+						},
+						{
+							"id": "3",
+							"type": "HYBRID"
+						}
+					],
           "items": [
             {
               "id": "d4975df5-b18c-4772-80ad-368669856d52",
@@ -155,6 +169,9 @@ The request will contain only minimal details about the job like course name, de
                 "LANGUAGE-COURSES",
                 "SELF-PACED-COURSES"
               ],
+              "fulfillment_ids": [
+								"1"
+							],
               "rating": "4.5",
               "rateable": true,
               "tags": [
@@ -336,6 +353,20 @@ The request will contain only minimal details about the job like course name, de
           }
         ]
       },
+      "fulfillments": [
+						{
+							"id": "1",
+							"type": "ONLINE"
+						},
+						{
+							"id": "2",
+							"type": "IN-PERSON"
+						},
+						{
+							"id": "3",
+							"type": "HYBRID"
+						}
+      ],
       "items": [
         {
           "id": "d4975df5-b18c-4772-80ad-368669856d52",
@@ -379,6 +410,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+            "1"
+          ],          
           "rating": "4.5",
           "rateable": true,
           "tags": [
@@ -655,6 +689,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+								"1"
+          ],
           "rating": "4.5",
           "rateable": true,
           "xinput": {
@@ -735,6 +772,8 @@ The request will contain only minimal details about the job like course name, de
       ],
       "fulfillments": [
         {
+          "id" : "1",
+          "type": "ONLINE",
           "agent": {
             "person": {
               "name": "Infosys Springboard"
@@ -915,6 +954,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+            "1"
+          ],
           "rating": "4.5",
           "rateable": true,
           "tags": [
@@ -974,6 +1016,8 @@ The request will contain only minimal details about the job like course name, de
       ],
       "fulfillments": [
         {
+          "id" : "1",
+          "type": "ONLINE",
           "agent": {
             "person": {
               "name": "Infosys Springboard"
@@ -1154,6 +1198,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+            "1"
+          ],
           "rating": "4.5",
           "rateable": true,
           "tags": [
@@ -1213,6 +1260,8 @@ The request will contain only minimal details about the job like course name, de
       ],
       "fulfillments": [
         {
+          "id" : "1",
+          "type": "ONLINE",
           "agent": {
             "person": {
               "name": "Infosys Springboard"
@@ -1522,6 +1571,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+            "1"
+          ],
           "rating": "4.5",
           "rateable": true,
           "add-ons": [
@@ -1609,6 +1661,8 @@ The request will contain only minimal details about the job like course name, de
       ],
       "fulfillments": [
         {
+          "id" : "1",
+          "type": "ONLINE",
           "state": {
             "descriptor": {
               "code": "NOT-STARTED",
@@ -1871,6 +1925,9 @@ The request will contain only minimal details about the job like course name, de
             "LANGUAGE-COURSES",
             "SELF-PACED-COURSES"
           ],
+          "fulfillment_ids": [
+            "1"
+          ],
           "rating": "4.5",
           "rateable": true,
           "add-ons": [
@@ -1958,6 +2015,8 @@ The request will contain only minimal details about the job like course name, de
       ],
       "fulfillments": [
         {
+          "id" : "1",
+          "type": "ONLINE",
           "state": {
             "descriptor": {
               "code": "COMPLETED",
