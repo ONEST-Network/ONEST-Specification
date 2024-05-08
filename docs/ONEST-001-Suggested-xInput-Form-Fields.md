@@ -52,6 +52,8 @@ When the Provider app sends a form to the Seeker app to get further details from
 | edu-qual-institution-state-\<n> | input text | State in which institution is located. | ISO_3166-2:IN state code | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-subject-\<n> | input text | Subjects or specializations covered as part of a education qualification |  | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
 | edu-qual-id-card-\<n> | file | Photo of ID Card | | \<n> is an integer where 0 means current. If user is not currently enrolled then 0 means latest. 1 means the one before that and so on.  |
+| \<Name Attribute>-verified  | input checkbox | Whether the data given in the input refered to the name attribute in this table is verified by the agent                |                               | |
+
 
 ### List of documents
 
@@ -116,7 +118,7 @@ Consider the BPP wants to get the following details from the user via form
     - Proof of identity (driving license or passport)
     - Aadhar card
 
-Apart from the above the BPP also want to get confirmation that the agent at the BAP end has verified these certificates. The form for the same will be as below:
+Apart from the above the BPP also want to get confirmation that the agent at the BAP end has verified these certificates as well as the user's parent's full name. The form for the same will be as below:
 
 ```
 <form action="https://bpp.com/form/1293821" method="post">
@@ -124,6 +126,8 @@ Apart from the above the BPP also want to get confirmation that the agent at the
     <div>
         <label for="user-parent-full-name">Full Name of parent*</label>
         <input type="text" id="user-parent-full-name" name="user-parent-full-name" pattern="[a-zA-Z\s.]+" required />
+        <input type="checkbox" id="user-parent-full-name-verified" name="user-parent-full-name-verified" />
+        <span><i>User Parent Full Name has been verified by the Agent</i></span><br /><br />
     </div>
 
     <div>
