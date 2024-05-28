@@ -71,8 +71,7 @@ init | message.order.provider.id
 init | message.order.fulfillments[].customer.person.name
 init | message.order.fulfillments[].customer.person.age
 init | message.order.fulfillments[].customer.person.gender
-init | message.order.fulfillments[].customer.contact.phone
-init | message.order.fulfillments[].customer.contact.email
+init | message.order.fulfillments[].customer.contact.phone<br>OR<br>message.order.fulfillments[].customer.contact.email  
 on_init | context.domain
 on_init | context.action
 on_init | context.timestamp
