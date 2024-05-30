@@ -312,7 +312,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "Upto RS.1000 per year"
+                                "value": "1000"
                             },
                             "time": {
                                 "range": {
@@ -656,7 +656,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -1079,7 +1079,7 @@ Searches may be used by the seeker apps to cache responses basis the intent as w
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -1495,7 +1495,7 @@ Here the BPP sends the first form to be filled. Value of `Fulfillment.state.desc
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -1911,7 +1911,7 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -2325,7 +2325,7 @@ Here fulfillment status will be `APPLICATION-IN-PROGRESS` as the user has alread
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -2751,7 +2751,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -3277,7 +3277,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                 },
                 "price": {
                    "currency": "INR",
-                   "value": "Upto RS.1000 per year"
+                   "value": "1000"
                 },
                 "time": {
                         "range": {
@@ -3670,7 +3670,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
@@ -4028,7 +4028,7 @@ If there are no more forms to be filled, BPP will send on\_init request without 
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "1000"
                     },
                     "time": {
                         "range": {
