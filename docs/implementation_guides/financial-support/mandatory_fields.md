@@ -25,9 +25,9 @@ on_search | message.catalog.providers[].id
 on_search | message.catalog.providers[].descriptor.name
 on_search | message.catalog.providers[].items[].id
 on_search | message.catalog.providers[].items[].descriptor.name
-on_search | message.catalog.providers[].items[].descriptor.long_desc
+on_search | message.catalog.providers[].items[].descriptor.long_desc 
 on_search | message.catalog.providers[].items[].price.currency
-on_search | message.catalog.providers[].items[].price.value
+on_search | message.catalog.providers[].items[].price.value<br>OR<br>message.catalog.providers[].items[].price.minimum_value<br>message.catalog.providers[].items[].price.maximum_value
 select | context.domain
 select | context.action
 select | context.timestamp
