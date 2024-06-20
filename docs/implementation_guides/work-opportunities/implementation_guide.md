@@ -271,699 +271,699 @@ The request will contain only minimal details about the job like job name, job d
 
 ```json
 {
-	"context": {
-		"domain": "onest:work-opportunities",
-		"action": "on_search",
-		"version": "1.1.0",
-		"bap_id": "worker-hub.bap.io",
-		"bap_uri": "https://worker-hub.bap.io",
-		"bpp_id": "job-hub.bpp.io",
-		"bpp_uri": "https://job-hub.bpp.io",
-		"transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-		"message_id": "672f774c-4281-44dd-b1c2-84222a3d771e",
-		"timestamp": "2023-02-22T11:45:10.1712958+00:00",
-		"ttl": "P1M"
-	},
-	"message": {
-		"catalog": {
-			"descriptor": {
-				"name": "Affindi Jobs"
-			},
-			"providers": [
-				{
-					"id": "1",
-					"descriptor": {
-						"name": "Affinidi",
-						"short_desc": "Short Description about the company",
-						"images": [
-							{
-								"url": "url of the image of the provider"
-							}
-						]
-					},
-					"fulfillments": [
-						{
-							"id": "1",
-							"type": "REMOTE"
-						},
-						{
-							"id": "2",
-							"type": "HYBRID"
-						},
-						{
-							"id": "3",
-							"type": "ONSITE"
-						}
-					],
-					"locations": [
-						{
-							"id": "L1",
-							"city": {
-								"name": "Pune",
-								"code": "std:020"
-							},
-							"state": {
-								"name": "Maharastra",
-								"code": "MH"
-							}
-						},
-						{
-							"id": "L2",
-							"city": {
-								"name": "Thane",
-								"code": "std:022"
-							},
-							"state": {
-								"name": "Maharastra",
-								"code": "MH"
-							}
-						},
-						{
-							"id": "L3",
-							"city": {
-								"name": "Lucknow",
-								"code": "std:0522"
-							},
-							"state": {
-								"name": "Uttar Pradesh",
-								"code": "UP"
-							}
-						}
-					],
-					"items": [
-						{
-							"id": "D7F8606A370DA9966DF15E62A81C374B",
-							"descriptor": {
-								"name": "Database Engineer",
-								"long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner ",
-								"media": [
-									{
-										"mimetype": "audio/mp4",
-										"url": "http://url-to-audio-about-job"
-									},
-									{
-										"mimetype": "video/mp4",
-										"url": "http://url-to-video-about-job"
-									}
-								]
-							},
-							"quantity": {
-								"available": {
-									"count": 150
-								}
-							},
-							"location_ids": [
-								"L1"
-							],
-							"fulfillment_ids": [
-								"1",
-								"2",
-								"3"
-							],
-							"tags": [
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-name",
-												"name": "Name of the course"
-											},
-											"value": "Class-X",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-name",
-												"name": "Name of the course"
-											},
-											"value": "Class-XII",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-level",
-												"name": "Level of the course"
-											},
-											"value": "Under Graduate",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-level",
-												"name": "Level of the course"
-											},
-											"value": "Graduate",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "false",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "job-requirements",
-										"name": "Job requirements"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "req-experience",
-												"name": "Required work experience in years"
-											},
-											"value": "2.5",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Skills required for the role"
-											},
-											"value": "android-development",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Skills required for the role"
-											},
-											"value": "dev-ops",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Additional skills required for the job"
-											},
-											"value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "job-responsibilities",
-										"name": "Job responsibilities"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Build frontend experiences for our tools (Web, PWA and React Native)",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Mentor and train other team members on design techniques and coding standards.",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "listing-details",
-										"name": "Listing details"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "industry-type",
-												"name": "Industry type"
-											},
-											"value": "IT Services & Consulting",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "department",
-												"name": "Department"
-											},
-											"value": "Engineering - Software & QA",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "employment-type",
-												"name": "Employment type"
-											},
-											"value": "full-time",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "job-role",
-												"name": "Job role"
-											},
-											"value": "DevOps Engineer",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "salary-info",
-										"name": "Salary information"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "gross-min",
-												"name": "Minimum gross pay"
-											},
-											"value": "900000",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "gross-max",
-												"name": "Maximum gross pay"
-											},
-											"value": "1200000",
-											"display": true
-										}
-									]
-								}
-							]
-						},
-						{
-							"id": "0253719F295521CED39EC9C2F3C8DCDE",
-							"descriptor": {
-								"name": "Fullstack Engineer",
-								"long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner",
-								"media": [
-									{
-										"mimetype": "audio/mp4",
-										"url": "http://url-to-audio-about-job"
-									},
-									{
-										"mimetype": "video/mp4",
-										"url": "http://url-to-video-about-job"
-									}
-								]
-							},
-							"quantity": {
-								"available": {
-									"count": 50
-								}
-							},
-							"location_ids": [
-								"L2"
-							],
-							"fulfillment_ids": [
-								"1",
-								"2",
-								"3"
-							],
-							"tags": [
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-name",
-												"name": "Name of the course"
-											},
-											"value": "Class-X",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-name",
-												"name": "Name of the course"
-											},
-											"value": "Class-XII",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-level",
-												"name": "Level of the course"
-											},
-											"value": "Under Graduate",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "min-percentage",
-												"name": "Minimum percentage of marks to be obtained in the course for eligibility"
-											},
-											"value": "60",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "true",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "academic-eligibility",
-										"name": "Academic eligibility"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "course-level",
-												"name": "Level of the course"
-											},
-											"value": "Graduate",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "mandatory-eligibility",
-												"name": "Mandatory Eligibility"
-											},
-											"value": "false",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "job-requirements",
-										"name": "Job requirements"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "req-experience",
-												"name": "Required work experience in years"
-											},
-											"value": "2.5",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Skills required for the role"
-											},
-											"value": "android-development",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Skills required for the role"
-											},
-											"value": "dev-ops",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "req-prof-skill",
-												"name": "Additional skills required for the job"
-											},
-											"value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "job-responsibilities",
-										"name": "Job responsibilities"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Build frontend experiences for our tools (Web, PWA and React Native)",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "responsibility",
-												"name": "Responsibility"
-											},
-											"value": "Mentor and train other team members on design techniques and coding standards.",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "listing-details",
-										"name": "Listing details"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "industry-type",
-												"name": "Industry type"
-											},
-											"value": "IT Services & Consulting",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "department",
-												"name": "Department"
-											},
-											"value": "Engineering - Software & QA",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "employment-type",
-												"name": "Employment type"
-											},
-											"value": "full-time",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "job-role",
-												"name": "Job role"
-											},
-											"value": "DevOps Engineer",
-											"display": true
-										}
-									]
-								},
-								{
-									"display": true,
-									"descriptor": {
-										"code": "salary-info",
-										"name": "Salary information"
-									},
-									"list": [
-										{
-											"descriptor": {
-												"code": "gross-min",
-												"name": "Minimum gross pay"
-											},
-											"value": "900000",
-											"display": true
-										},
-										{
-											"descriptor": {
-												"code": "gross-max",
-												"name": "Maximum gross pay"
-											},
-											"value": "1200000",
-											"display": true
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	}
+  "context": {
+    "domain": "onest:work-opportunities",
+    "action": "on_search",
+    "version": "1.1.0",
+    "bap_id": "worker-hub.bap.io",
+    "bap_uri": "https://worker-hub.bap.io",
+    "bpp_id": "job-hub.bpp.io",
+    "bpp_uri": "https://job-hub.bpp.io",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+    "message_id": "672f774c-4281-44dd-b1c2-84222a3d771e",
+    "timestamp": "2023-02-22T11:45:10.1712958+00:00",
+    "ttl": "P1M"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "Affindi Jobs"
+      },
+      "providers": [
+        {
+          "id": "1",
+          "descriptor": {
+            "name": "Affinidi",
+            "short_desc": "Short Description about the company",
+            "images": [
+              {
+                "url": "url of the image of the provider"
+              }
+            ]
+          },
+          "fulfillments": [
+            {
+              "id": "1",
+              "type": "REMOTE"
+            },
+            {
+              "id": "2",
+              "type": "HYBRID"
+            },
+            {
+              "id": "3",
+              "type": "ONSITE"
+            }
+          ],
+          "locations": [
+            {
+              "id": "L1",
+              "city": {
+                "name": "Pune",
+                "code": "std:020"
+              },
+              "state": {
+                "name": "Maharastra",
+                "code": "MH"
+              }
+            },
+            {
+              "id": "L2",
+              "city": {
+                "name": "Thane",
+                "code": "std:022"
+              },
+              "state": {
+                "name": "Maharastra",
+                "code": "MH"
+              }
+            },
+            {
+              "id": "L3",
+              "city": {
+                "name": "Lucknow",
+                "code": "std:0522"
+              },
+              "state": {
+                "name": "Uttar Pradesh",
+                "code": "UP"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "D7F8606A370DA9966DF15E62A81C374B",
+              "descriptor": {
+                "name": "Database Engineer",
+                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner ",
+                "media": [
+                  {
+                    "mimetype": "audio/mp4",
+                    "url": "http://url-to-audio-about-job"
+                  },
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "http://url-to-video-about-job"
+                  }
+                ]
+              },
+              "quantity": {
+                "available": {
+                  "count": 150
+                }
+              },
+              "location_ids": [
+                "L1"
+              ],
+              "fulfillment_ids": [
+                "1",
+                "2",
+                "3"
+              ],
+              "tags": [
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-name",
+                        "name": "Name of the course"
+                      },
+                      "value": "Class-X",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-name",
+                        "name": "Name of the course"
+                      },
+                      "value": "Class-XII",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-level",
+                        "name": "Level of the course"
+                      },
+                      "value": "Under Graduate",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-level",
+                        "name": "Level of the course"
+                      },
+                      "value": "Graduate",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "false",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "job-requirements",
+                    "name": "Job requirements"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "req-experience",
+                        "name": "Required work experience in years"
+                      },
+                      "value": "2.5",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Skills required for the role"
+                      },
+                      "value": "android-development",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Skills required for the role"
+                      },
+                      "value": "dev-ops",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Additional skills required for the job"
+                      },
+                      "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "job-responsibilities",
+                    "name": "Job responsibilities"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Build frontend experiences for our tools (Web, PWA and React Native)",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Mentor and train other team members on design techniques and coding standards.",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "listing-details",
+                    "name": "Listing details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "industry-type",
+                        "name": "Industry type"
+                      },
+                      "value": "IT Services & Consulting",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "department",
+                        "name": "Department"
+                      },
+                      "value": "Engineering - Software & QA",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "employment-type",
+                        "name": "Employment type"
+                      },
+                      "value": "full-time",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "job-role",
+                        "name": "Job role"
+                      },
+                      "value": "DevOps Engineer",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "salary-info",
+                    "name": "Salary information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "gross-min",
+                        "name": "Minimum gross pay"
+                      },
+                      "value": "900000",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "gross-max",
+                        "name": "Maximum gross pay"
+                      },
+                      "value": "1200000",
+                      "display": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0253719F295521CED39EC9C2F3C8DCDE",
+              "descriptor": {
+                "name": "Fullstack Engineer",
+                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner",
+                "media": [
+                  {
+                    "mimetype": "audio/mp4",
+                    "url": "http://url-to-audio-about-job"
+                  },
+                  {
+                    "mimetype": "video/mp4",
+                    "url": "http://url-to-video-about-job"
+                  }
+                ]
+              },
+              "quantity": {
+                "available": {
+                  "count": 50
+                }
+              },
+              "location_ids": [
+                "L2"
+              ],
+              "fulfillment_ids": [
+                "1",
+                "2",
+                "3"
+              ],
+              "tags": [
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-name",
+                        "name": "Name of the course"
+                      },
+                      "value": "Class-X",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-name",
+                        "name": "Name of the course"
+                      },
+                      "value": "Class-XII",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-level",
+                        "name": "Level of the course"
+                      },
+                      "value": "Under Graduate",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "min-percentage",
+                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                      },
+                      "value": "60",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "true",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "academic-eligibility",
+                    "name": "Academic eligibility"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "course-level",
+                        "name": "Level of the course"
+                      },
+                      "value": "Graduate",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "mandatory-eligibility",
+                        "name": "Mandatory Eligibility"
+                      },
+                      "value": "false",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "job-requirements",
+                    "name": "Job requirements"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "req-experience",
+                        "name": "Required work experience in years"
+                      },
+                      "value": "2.5",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Skills required for the role"
+                      },
+                      "value": "android-development",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Skills required for the role"
+                      },
+                      "value": "dev-ops",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "req-prof-skill",
+                        "name": "Additional skills required for the job"
+                      },
+                      "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "job-responsibilities",
+                    "name": "Job responsibilities"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Build frontend experiences for our tools (Web, PWA and React Native)",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "responsibility",
+                        "name": "Responsibility"
+                      },
+                      "value": "Mentor and train other team members on design techniques and coding standards.",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "listing-details",
+                    "name": "Listing details"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "industry-type",
+                        "name": "Industry type"
+                      },
+                      "value": "IT Services & Consulting",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "department",
+                        "name": "Department"
+                      },
+                      "value": "Engineering - Software & QA",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "employment-type",
+                        "name": "Employment type"
+                      },
+                      "value": "full-time",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "job-role",
+                        "name": "Job role"
+                      },
+                      "value": "DevOps Engineer",
+                      "display": true
+                    }
+                  ]
+                },
+                {
+                  "display": true,
+                  "descriptor": {
+                    "code": "salary-info",
+                    "name": "Salary information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "gross-min",
+                        "name": "Minimum gross pay"
+                      },
+                      "value": "900000",
+                      "display": true
+                    },
+                    {
+                      "descriptor": {
+                        "code": "gross-max",
+                        "name": "Maximum gross pay"
+                      },
+                      "value": "1200000",
+                      "display": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
 ```
 
