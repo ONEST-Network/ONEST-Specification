@@ -1503,7 +1503,7 @@ The request will contain only minimal details about the job like job name, job d
    \
    If there are no required xinput forms, the BAP can confirm the order via /confirm API.\
    \
-   [Example](https://github.com/beckn/DSEP-Specification/blob/draft/examples/financial-support/forms/scholarship-application-form.html) of xinput form and [recommendations](https://github.com/beckn/protocol-specifications/blob/master/docs/BECKN-007-The-XInput-Schema.md) to create xinput form.
+   [Example](https://github.com/ONEST-Network/ONEST-Specification/blob/main/docs/ONEST-001-Suggested-xInput-Form-Fields.md#example)
 
 <details>
 
