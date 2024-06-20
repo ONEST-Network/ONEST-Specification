@@ -113,27 +113,25 @@ The request will contain only minimal details about the job like course name, de
             }
           ],
           "fulfillments": [
-						{
-							"id": "1",
-							"type": "ONLINE"
-						},
-						{
-							"id": "2",
-							"type": "IN-PERSON"
-						},
-						{
-							"id": "3",
-							"type": "HYBRID"
-						}
-					],
+            {
+              "agent": {
+                "person": {
+                  "name": "Infosys Springboard"
+                },
+                "contact": {
+                  "email": "support@infy.com"
+                }
+              }
+            }
+          ],
           "items": [
             {
               "id": "d4975df5-b18c-4772-80ad-368669856d52",
               "quantity": {
                 "maximum": {
-                    "count": 1
-                   }
-               },
+                  "count": 1
+                }
+              },
               "descriptor": {
                 "name": "Everyday Conversational English",
                 "short_desc": "Elevate your daily conversations with confidence through our 'Everyday Conversational English' course.",
@@ -170,8 +168,8 @@ The request will contain only minimal details about the job like course name, de
                 "SELF-PACED-COURSES"
               ],
               "fulfillment_ids": [
-								"1"
-							],
+                "1"
+              ],
               "rating": "4.5",
               "rateable": true,
               "tags": [
@@ -227,18 +225,6 @@ The request will contain only minimal details about the job like course name, de
                   "display": true
                 }
               ]
-            }
-          ],
-          "fulfillments": [
-            {
-              "agent": {
-                "person": {
-                  "name": "Infosys Springboard"
-                },
-                "contact": {
-                  "email": "support@infy.com"
-                }
-              }
             }
           ]
         }
