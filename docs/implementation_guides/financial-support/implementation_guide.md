@@ -118,7 +118,7 @@ Please refer to the tags subsection for detailed explanations on the tags used.
 
 <summary>Search API - Search by eligibility criteria</summary>
 
-Here the user is searching for scholarships and grants for a user from the SC or ST community who has passed 10th standard.
+Here the user is searching for scholarships and grants for a user from the SC or ST community, who has passed 10th standard.
 
 ```json
 {
